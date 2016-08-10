@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nk9-El-NOs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -61,7 +61,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rFr-GC-jZo">
                                                             <rect key="frame" x="40" y="0.0" width="520" height="100"/>
                                                             <subviews>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQB-aW-Ynb">
+                                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQB-aW-Ynb">
                                                                     <rect key="frame" x="0.0" y="0.0" width="520" height="30"/>
                                                                     <color key="backgroundColor" red="0.95686274510000002" green="0.33725490200000002" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
@@ -156,6 +156,134 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+        <!--Alphabets View Controller-->
+        <scene sceneID="vth-uC-kvc">
+            <objects>
+                <viewController id="nk9-El-NOs" customClass="AlphabetsViewController" customModule="nepali101" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W0i-9q-5On"/>
+                        <viewControllerLayoutGuide type="bottom" id="7qN-7f-Lje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wVa-t1-m1e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2TI-aa-1Kh">
+                                <rect key="frame" x="10" y="70" width="580" height="530"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ErF-fB-1dk">
+                                    <size key="itemSize" width="78" height="76"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ZkE-Pb-yLq" customClass="CustomCollectionViewCell" customModule="nepali101" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="78" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0m-XE-qLk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="78" height="76"/>
+                                                    <color key="backgroundColor" red="0.95686274510000002" green="0.33725490200000002" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="alphabetLabel" destination="X0m-XE-qLk" id="Otd-fH-Rn4"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7qN-7f-Lje" firstAttribute="top" secondItem="2TI-aa-1Kh" secondAttribute="bottom" id="1Qz-nL-gLb"/>
+                            <constraint firstAttribute="trailing" secondItem="2TI-aa-1Kh" secondAttribute="trailing" constant="10" id="Y39-vH-4Kw"/>
+                            <constraint firstItem="2TI-aa-1Kh" firstAttribute="top" secondItem="W0i-9q-5On" secondAttribute="bottom" constant="50" id="jVT-Yo-gl2"/>
+                            <constraint firstItem="2TI-aa-1Kh" firstAttribute="leading" secondItem="wVa-t1-m1e" secondAttribute="leading" constant="10" id="nsb-pC-2YF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="2TI-aa-1Kh" id="Jyd-H3-RcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDV-eb-zLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="1004"/>
+        </scene>
+        <!--Alphabet Pop Up View Controller-->
+        <scene sceneID="2Qu-6e-Ssq">
+            <objects>
+                <viewController storyboardIdentifier="AlphabetPopUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nVR-NL-YsE" customClass="AlphabetPopUpViewController" customModule="nepali101" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eq6-sa-0rP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Szw-Ff-Y7l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RDL-PS-zl3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-p0-Fau">
+                                <rect key="frame" x="37" y="90" width="526" height="392"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aBU-uI-9T4">
+                                        <rect key="frame" x="251" y="95" width="33" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBg-Jr-kQq">
+                                                <rect key="frame" x="0.0" y="0.0" width="33" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo3-6J-fsE">
+                                        <rect key="frame" x="244" y="321" width="39" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <action selector="closePopUp:" destination="nVR-NL-YsE" eventType="touchUpInside" id="VIS-CY-ktI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.33725490200000002" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fo3-6J-fsE" secondAttribute="bottom" constant="41" id="3iw-TU-Jl7"/>
+                                    <constraint firstItem="aBU-uI-9T4" firstAttribute="centerX" secondItem="zpY-p0-Fau" secondAttribute="centerX" id="Vkv-f7-DLH"/>
+                                    <constraint firstItem="aBU-uI-9T4" firstAttribute="top" secondItem="zpY-p0-Fau" secondAttribute="top" constant="95" id="hlI-ls-fbN"/>
+                                    <constraint firstItem="fo3-6J-fsE" firstAttribute="centerX" secondItem="zpY-p0-Fau" secondAttribute="centerX" id="yvk-Nq-GjL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zpY-p0-Fau" secondAttribute="trailing" constant="37" id="0XG-D2-TJv"/>
+                            <constraint firstItem="zpY-p0-Fau" firstAttribute="leading" secondItem="RDL-PS-zl3" secondAttribute="leading" constant="37" id="Gb4-L4-35G"/>
+                            <constraint firstItem="Szw-Ff-Y7l" firstAttribute="top" secondItem="zpY-p0-Fau" secondAttribute="bottom" constant="118" id="W2m-RS-QYc"/>
+                            <constraint firstItem="zpY-p0-Fau" firstAttribute="top" secondItem="eq6-sa-0rP" secondAttribute="bottom" constant="70" id="WKF-ZO-ao0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I87-ee-AvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="1003"/>
         </scene>
     </scenes>
 </document>
