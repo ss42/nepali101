@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Anandazz Lt.TTF">
+            <string>AnandazzLt</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -61,18 +66,19 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rFr-GC-jZo">
                                                             <rect key="frame" x="40" y="0.0" width="520" height="100"/>
                                                             <subviews>
-                                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQB-aW-Ynb">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kT-vF-sOh">
                                                                     <rect key="frame" x="0.0" y="0.0" width="520" height="30"/>
                                                                     <color key="backgroundColor" red="0.95686274510000002" green="0.33725490200000002" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="jJU-3k-QcF"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                                    <state key="normal" title="Button">
-                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    </state>
-                                                                </button>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kT-vF-sOh">
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="7"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa8-ED-U4s">
                                                                     <rect key="frame" x="0.0" y="35" width="520" height="30"/>
                                                                     <color key="backgroundColor" red="0.95686274510000002" green="0.33725490200000002" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
@@ -99,6 +105,7 @@
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="8kT-vF-sOh" firstAttribute="height" secondItem="Y7P-Bv-ShN" secondAttribute="height" id="8O5-Tt-8lT"/>
+                                                                <constraint firstItem="8kT-vF-sOh" firstAttribute="height" secondItem="Sa8-ED-U4s" secondAttribute="height" id="NV8-xI-mBb"/>
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
@@ -123,6 +130,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="button1" destination="8kT-vF-sOh" id="cM6-HB-vHU"/>
                                             <outlet property="button2" destination="8kT-vF-sOh" id="Am5-2R-3R8"/>
                                             <outlet property="button3" destination="Y7P-Bv-ShN" id="RpR-Bz-9fM"/>
                                             <outlet property="menu" destination="cUv-5Y-TWL" id="UxK-ub-P0I"/>
@@ -210,10 +218,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALPHABETS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7n-ym-NWi">
                                 <rect key="frame" x="230" y="20" width="140" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-gf-Lh7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-gf-Lh7">
                                 <rect key="frame" x="10" y="20" width="40" height="40"/>
                                 <state key="normal" title="BACK"/>
                             </button>
@@ -226,7 +234,7 @@
                             <constraint firstItem="s7n-ym-NWi" firstAttribute="centerX" secondItem="wVa-t1-m1e" secondAttribute="centerX" id="WIl-Fa-BTA"/>
                             <constraint firstAttribute="trailing" secondItem="2TI-aa-1Kh" secondAttribute="trailing" constant="10" id="Y39-vH-4Kw"/>
                             <constraint firstItem="2TI-aa-1Kh" firstAttribute="top" secondItem="NAM-gf-Lh7" secondAttribute="bottom" constant="10" id="YQ3-9U-Fxr"/>
-                            <constraint firstItem="s7n-ym-NWi" firstAttribute="leading" secondItem="NAM-gf-Lh7" secondAttribute="trailing" constant="8" symbolic="YES" id="ZBo-y1-mY5"/>
+                            <constraint firstItem="s7n-ym-NWi" firstAttribute="leading" secondItem="NAM-gf-Lh7" secondAttribute="trailing" constant="180" id="ZBo-y1-mY5"/>
                             <constraint firstItem="NAM-gf-Lh7" firstAttribute="top" secondItem="W0i-9q-5On" secondAttribute="bottom" id="cH0-Rb-eNf"/>
                             <constraint firstItem="2TI-aa-1Kh" firstAttribute="top" secondItem="s7n-ym-NWi" secondAttribute="bottom" constant="10" id="hcp-bN-RQG"/>
                             <constraint firstItem="2TI-aa-1Kh" firstAttribute="top" secondItem="W0i-9q-5On" secondAttribute="bottom" constant="50" id="jVT-Yo-gl2"/>
@@ -256,13 +264,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-p0-Fau">
                                 <rect key="frame" x="37" y="90" width="526" height="392"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMd-CU-iGh">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMd-CU-iGh">
                                         <rect key="frame" x="10" y="10" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Ps5-Zg-Qvm"/>
                                             <constraint firstAttribute="width" constant="50" id="RqI-dI-Tzv"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="AnandazzLt" family="Anandazz Lt" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -336,6 +344,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhS-eF-Hyp">
+                                <rect key="frame" x="24" y="28" width="39" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="nVR-NL-YsE" eventType="touchUpInside" id="rXJ-ZJ-v1k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zpY-p0-Fau" secondAttribute="trailing" constant="37" id="0XG-D2-TJv"/>

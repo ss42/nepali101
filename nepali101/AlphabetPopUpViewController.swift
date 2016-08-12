@@ -7,22 +7,48 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class AlphabetPopUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector (dismissWindow))
+        view.addGestureRecognizer(tap)
+        
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
         
         self.showAnimate()
         
-        // Do any additional setup after loading the view.
+        
+        
+        //uncomment the following line to play sound
+       /* var sound : AVAudioPlayer?
+
+        if let getSound = self.setupAudioPlayerWithFile("ButtonTap", type:"wav") {
+            VARIABLE = getSound
+        }
+        sound?.play()*/
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func dismissWindow(){
+        self.removeAnimate()
+
+    }
+    
+    @IBAction func closeButtonPressed(sender: AnyObject) {
+        self.removeAnimate()
+
+        
     }
     
     @IBAction func closePopUp(sender: AnyObject) {
@@ -54,6 +80,45 @@ class AlphabetPopUpViewController: UIViewController {
                 }
         });
     }
+    
+    // MARK: Setting up Sound
+    
+    
+    
+    func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer?  {
+        //1
+        let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        let url = NSURL.fileURLWithPath(path!)
+        
+        //2
+        var audioPlayer:AVAudioPlayer?
+        
+        // 3
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOfURL: url)
+        } catch {
+            print("Player not available")
+        }
+        
+        return audioPlayer
+    }
 
 
 }
+/*
+ 
+ //for playing sound
+ import AVFoundation
+ 
+ let beepSoundURL =  NSBundle.mainBundle().URLForResource("beep", withExtension: "aif")!
+ var beepPlayer = AVAudioPlayer()
+ func playMySound(){
+ beepPlayer = AVAudioPlayer(contentsOfURL: beepSoundURL, error: nil)
+ beepPlayer.prepareToPlay()
+ beepPlayer.play()
+ }
+ 
+ @IBAction func pistolButton(sender: AnyObject) {
+ playMySound()
+ }
+ */
