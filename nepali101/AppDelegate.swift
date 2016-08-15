@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        // MARK: PlistManager.swift (in supporting files)
+        PlistManager.sharedInstance.startPlistManager()
+
         // Override point for customization after application launch.
         return true
     }
