@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // MARK: PlistManager.swift (in supporting files)
         PlistManager.sharedInstance.startPlistManager()
+        //Alphabet.parseJSON()
 
         // Override point for customization after application launch.
         return true

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		920C52871D5B644B00AB7E20 /* CustomViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C52861D5B644B00AB7E20 /* CustomViewIBDesignable.swift */; };
+		923055931D636A21006466DE /* Consonants.json in Resources */ = {isa = PBXBuildFile; fileRef = 923055921D636A21006466DE /* Consonants.json */; };
 		923BD7831D5A6EBB00B0EFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923BD7821D5A6EBB00B0EFB1 /* AppDelegate.swift */; };
 		923BD7851D5A6EBB00B0EFB1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923BD7841D5A6EBB00B0EFB1 /* MenuViewController.swift */; };
 		923BD7881D5A6EBB00B0EFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923BD7861D5A6EBB00B0EFB1 /* Main.storyboard */; };
@@ -58,11 +59,11 @@
 		929FBD8D1D5D2318008854EA /* 35tra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 929FBD691D5D2318008854EA /* 35tra.mp3 */; };
 		929FBD8E1D5D2318008854EA /* 36gya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 929FBD6A1D5D2318008854EA /* 36gya.mp3 */; };
 		929FBD911D5D236C008854EA /* Alphabets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 929FBD901D5D236C008854EA /* Alphabets.plist */; };
-		92E146D81D617BAA00E0EEF8 /* DataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 92E146D71D617BAA00E0EEF8 /* DataSource.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		920C52861D5B644B00AB7E20 /* CustomViewIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewIBDesignable.swift; sourceTree = "<group>"; };
+		923055921D636A21006466DE /* Consonants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Consonants.json; sourceTree = "<group>"; };
 		923BD77F1D5A6EBB00B0EFB1 /* nepali101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nepali101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		923BD7821D5A6EBB00B0EFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		923BD7841D5A6EBB00B0EFB1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +116,6 @@
 		929FBD691D5D2318008854EA /* 35tra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 35tra.mp3; sourceTree = "<group>"; };
 		929FBD6A1D5D2318008854EA /* 36gya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 36gya.mp3; sourceTree = "<group>"; };
 		929FBD901D5D236C008854EA /* Alphabets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Alphabets.plist; sourceTree = "<group>"; };
-		92E146D71D617BAA00E0EEF8 /* DataSource.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataSource.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +241,7 @@
 				929FBD421D5CD7F1008854EA /* Anandazz Lt.TTF */,
 				923BD78B1D5A6EBB00B0EFB1 /* LaunchScreen.storyboard */,
 				929FBD3D1D5CD038008854EA /* CustomIBDesignable */,
-				92E146D71D617BAA00E0EEF8 /* DataSource.json */,
+				923055921D636A21006466DE /* Consonants.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -312,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				923BD78D1D5A6EBB00B0EFB1 /* LaunchScreen.storyboard in Resources */,
+				923055931D636A21006466DE /* Consonants.json in Resources */,
 				929FBD6C1D5D2318008854EA /* 02kha.mp3 in Resources */,
 				923BD78A1D5A6EBB00B0EFB1 /* Assets.xcassets in Resources */,
 				929FBD751D5D2318008854EA /* 11tta.mp3 in Resources */,
@@ -328,7 +329,6 @@
 				929FBD6D1D5D2318008854EA /* 03ga.mp3 in Resources */,
 				929FBD8A1D5D2318008854EA /* 32sa.mp3 in Resources */,
 				923BD7881D5A6EBB00B0EFB1 /* Main.storyboard in Resources */,
-				92E146D81D617BAA00E0EEF8 /* DataSource.json in Resources */,
 				929FBD711D5D2318008854EA /* 07cha.mp3 in Resources */,
 				929FBD851D5D2318008854EA /* 27ra.mp3 in Resources */,
 				929FBD6B1D5D2318008854EA /* 01ka.mp3 in Resources */,

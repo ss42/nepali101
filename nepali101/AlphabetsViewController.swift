@@ -21,6 +21,10 @@ class AlphabetsViewController: UIViewController, UICollectionViewDataSource, UIC
     var screenWidth: CGFloat!
     var screenHeight: CGFloat!
     
+    
+    var consonants = [Alphabet]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         screenSize = UIScreen.mainScreen().bounds
@@ -38,9 +42,43 @@ class AlphabetsViewController: UIViewController, UICollectionViewDataSource, UIC
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
 
+        
+        
+        parseJSON()
+        
         // Do any additional setup after loading the view.
     }
 
+    
+    
+    func parseJSON(){
+        
+        if let path = NSBundle.mainBundle().pathForResource("Consonants", ofType: "json"){
+            do{
+                let data = try(NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe))
+                let jsonDictionary = try(NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers))
+                //print(jsonDictionary)
+                if let postsArray = jsonDictionary["Consonants"] as? [[String: AnyObject]] {
+                    
+                    self.consonants = [Alphabet]()
+                    
+                    for postDictionary in postsArray {
+                        let post = Alphabet(letter: "", sound: "", word: "", englishLetter: "", englishWord: "", image: "")
+                        post.setValuesForKeysWithDictionary(postDictionary)
+                        self.consonants.append(post)
+                        print(consonants[0].word)
+                    }
+                    
+                }
+                
+                
+                
+            } catch let err{
+                print(err)
+            }
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -12,6 +12,9 @@ import AVFoundation
 
 class AlphabetPopUpViewController: UIViewController {
 
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +28,13 @@ class AlphabetPopUpViewController: UIViewController {
         
         
         
+        
+        
+        
+        
+        
+        
+        
         //uncomment the following line to play sound
        /* var sound : AVAudioPlayer?
 
@@ -32,7 +42,13 @@ class AlphabetPopUpViewController: UIViewController {
             VARIABLE = getSound
         }
         sound?.play()*/
+    
+    
+   
+        
+        
     }
+
     
     
     override func didReceiveMemoryWarning() {
