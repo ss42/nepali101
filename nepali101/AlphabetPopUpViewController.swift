@@ -13,27 +13,34 @@ import AVFoundation
 class AlphabetPopUpViewController: UIViewController {
 
     
+    // MARK: IBOutlets
     
+    @IBOutlet weak var letterLabel: UILabel!
+    
+    @IBOutlet weak var englishLetterLabel: UILabel!
+    
+    @IBOutlet weak var wordLabel: UILabel!
 
+    @IBOutlet weak var englishWordLabel: UILabel!
+    
+    @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet var mainView: UIView!
+    
+    //MARK: ConsonantsArray
+    
+    var consonants: [Alphabet] = []
+    var indexPath = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector (dismissWindow))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: mainView, action: #selector (dismissWindow))
         view.addGestureRecognizer(tap)
-        
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
-        
         self.showAnimate()
         
-        
-        
-        
-        
-        
-        
-        
-        
+        populateField(indexPath)
         
         //uncomment the following line to play sound
        /* var sound : AVAudioPlayer?
@@ -42,9 +49,16 @@ class AlphabetPopUpViewController: UIViewController {
             VARIABLE = getSound
         }
         sound?.play()*/
+        
+    }
     
+    //MARK: populateField 
     
-   
+    func populateField(indexPath: Int){
+        letterLabel.text = consonants[indexPath].letter
+        wordLabel.text = consonants[indexPath].word
+        englishWordLabel.text = consonants[indexPath].englishWord
+        englishLetterLabel.text = consonants[indexPath].englishLetter
         
         
     }

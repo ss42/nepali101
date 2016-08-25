@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A9FF811D6EABD8009BAEBD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A9FF801D6EABD8009BAEBD /* Constants.swift */; };
 		920C52871D5B644B00AB7E20 /* CustomViewIBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C52861D5B644B00AB7E20 /* CustomViewIBDesignable.swift */; };
 		923055931D636A21006466DE /* Consonants.json in Resources */ = {isa = PBXBuildFile; fileRef = 923055921D636A21006466DE /* Consonants.json */; };
 		923BD7831D5A6EBB00B0EFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923BD7821D5A6EBB00B0EFB1 /* AppDelegate.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10A9FF801D6EABD8009BAEBD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		920C52861D5B644B00AB7E20 /* CustomViewIBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewIBDesignable.swift; sourceTree = "<group>"; };
 		923055921D636A21006466DE /* Consonants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Consonants.json; sourceTree = "<group>"; };
 		923BD77F1D5A6EBB00B0EFB1 /* nepali101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nepali101.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10A9FF7F1D6EABBB009BAEBD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				10A9FF801D6EABD8009BAEBD /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		923BD7761D5A6EBB00B0EFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -149,9 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				923BD7821D5A6EBB00B0EFB1 /* AppDelegate.swift */,
+				923BD7861D5A6EBB00B0EFB1 /* Main.storyboard */,
+				10A9FF7F1D6EABBB009BAEBD /* Constants */,
 				929FBD3E1D5CD04F008854EA /* Menu */,
 				929FBD3C1D5CD020008854EA /* Alphabets */,
-				923BD7861D5A6EBB00B0EFB1 /* Main.storyboard */,
 				929FBD461D5D22E1008854EA /* Supporting Files */,
 				923BD7891D5A6EBB00B0EFB1 /* Assets.xcassets */,
 			);
@@ -285,6 +296,7 @@
 				TargetAttributes = {
 					923BD77E1D5A6EBB00B0EFB1 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7B9F98EQ3K;
 					};
 				};
 			};
@@ -373,6 +385,7 @@
 				9258F7FC1D5B767A00BD3DEA /* AlphabetsViewController.swift in Sources */,
 				923BD7981D5A7B6200B0EFB1 /* MenuViewCell.swift in Sources */,
 				9258F7FE1D5B808800BD3DEA /* AlphabetPopUpViewController.swift in Sources */,
+				10A9FF811D6EABD8009BAEBD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = nepali101/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sanjay.nepali101;
@@ -498,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = nepali101/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sanjay.nepali101;

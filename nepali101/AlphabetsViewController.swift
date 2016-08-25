@@ -13,7 +13,7 @@ class AlphabetsViewController: UIViewController, UICollectionViewDataSource, UIC
     @IBOutlet weak var collectionView: UICollectionView!
     
     
-    let alphabets = [ConsonantsConstant.KA, ConsonantsConstant.KHA, ConsonantsConstant.GA]
+   // let alphabets = [ConsonantsConstant.KA, ConsonantsConstant.KHA, ConsonantsConstant.GA]
     //"B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     
     
@@ -53,30 +53,28 @@ class AlphabetsViewController: UIViewController, UICollectionViewDataSource, UIC
     
     func parseJSON(){
         
-        if let path = NSBundle.mainBundle().pathForResource("Consonants", ofType: "json"){
-            do{
-                let data = try(NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe))
-                let jsonDictionary = try(NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers))
-                //print(jsonDictionary)
-                if let postsArray = jsonDictionary["Consonants"] as? [[String: AnyObject]] {
-                    
-                    self.consonants = [Alphabet]()
-                    
-                    for postDictionary in postsArray {
-                        let post = Alphabet(letter: "", sound: "", word: "", englishLetter: "", englishWord: "", image: "")
-                        post.setValuesForKeysWithDictionary(postDictionary)
-                        self.consonants.append(post)
-                        print(consonants[0].word)
-                    }
-                    
-                }
-                
-                
-                
-            } catch let err{
-                print(err)
-            }
+        guard let path = NSBundle.mainBundle().pathForResource("Consonants", ofType: "json") else {
+            print("Error finding file")
+            return
         }
+            do{
+                let data = NSData(contentsOfFile: path)
+                if let jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary //MutableContainers
+                //print(jsonDictionary)
+                {
+                    let dataArray = jsonResult["Consonants"] as! NSArray
+                    for item in dataArray{
+                        let consonant = Alphabet(letter: "", sound: "", word: "", englishLetter: "", englishWord: "", image: "")
+                        consonant.setValuesForKeysWithDictionary(item as! [String : AnyObject])
+                        print(consonant.letter)
+                        self.consonants.append(consonant)
+                    }}
+                
+            } catch let error as NSError{
+                print("Error: \n \(error)")
+                return
+        }
+        
         
     }
     override func didReceiveMemoryWarning() {
@@ -85,13 +83,13 @@ class AlphabetsViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return alphabets.count
+        return consonants.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CustomCollectionViewCell
-        cell.alphabetLabel.text = self.alphabets[indexPath.row]
+        cell.alphabetLabel.text = self.consonants[indexPath.row].letter
 
         return cell
         
@@ -100,6 +98,8 @@ class AlphabetsViewController: UIViewController, UICollectionViewDataSource, UIC
     func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
         print("didselectrowatindex")
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("AlphabetPopUp") as! AlphabetPopUpViewController
+        popOverVC.consonants = self.consonants
+        popOverVC.indexPath = indexPath.row
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)

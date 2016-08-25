@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nk9-El-NOs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nk9-El-NOs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DID-y7-Piy" id="YuU-sX-WRD">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="166"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="166.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZB-KK-uhz">
@@ -177,6 +177,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALPHABETS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7n-ym-NWi">
+                                <rect key="frame" x="230" y="20" width="140" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-gf-Lh7">
+                                <rect key="frame" x="10" y="20" width="40" height="40"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2TI-aa-1Kh">
                                 <rect key="frame" x="10" y="70" width="580" height="530"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -215,16 +225,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALPHABETS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7n-ym-NWi">
-                                <rect key="frame" x="230" y="20" width="140" height="40"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-gf-Lh7">
-                                <rect key="frame" x="10" y="20" width="40" height="40"/>
-                                <state key="normal" title="BACK"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -362,6 +362,14 @@
                             <constraint firstItem="zpY-p0-Fau" firstAttribute="top" secondItem="eq6-sa-0rP" secondAttribute="bottom" constant="70" id="WKF-ZO-ao0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="englishLetterLabel" destination="2d2-Mw-OlF" id="09h-kJ-9QM"/>
+                        <outlet property="englishWordLabel" destination="2Dp-fF-6ie" id="jNQ-B9-nYy"/>
+                        <outlet property="image" destination="3ot-jU-RqP" id="wj2-fm-YMB"/>
+                        <outlet property="letterLabel" destination="KMd-CU-iGh" id="Of1-s1-e7k"/>
+                        <outlet property="mainView" destination="RDL-PS-zl3" id="WG8-wi-ZRG"/>
+                        <outlet property="wordLabel" destination="XBg-Jr-kQq" id="AqT-k4-2BM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I87-ee-AvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

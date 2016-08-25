@@ -1,336 +1,301 @@
-//{
-  //  "Menu" :
+
 {
-        "Consonants" :[
-                    {
+    "Consonants" : [
+                {
                 "Letter" : "क",
                 "Word" : "कछुवा",
                 "Sound" : "01ka",
                 "EnglishLetter" : "KA",
-                "EnglishWord" : "",
-                "Image" : "",
+                "EnglishWord" : " ",
+                "Image" : " "
                 
-            },
-            {
-                "Letter" : "ख",
-                "Word" : "खरायो",
-                "Sound" : "02kha",
-                "EnglishLetter" : "KHA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "ग",
-                "Word" : "गमला",
-                "Sound" : "03ga",
-                "EnglishLetter" : "GA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "घ",
-                "Word" : "घर",
-                "Sound" : "04gha",
-                "EnglishLetter" : "GHA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "ङ",
-                "Word" : "नङ",
-                "Sound" : "05nga",
-                "EnglishLetter" : "NGA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "च",
-                "Word" : "चरा",
-                "Sound" : "06ca",
-                "EnglishLetter" : "CA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "छ",
-                "Word" : "छाता",
-                "Sound" : "07cha",
-                "EnglishLetter" : "CHA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "ज",
-                "Word" : "जहाज",
-                "Sound" : "08ja",
-                "EnglishLetter" : "JA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "झ",
-                "Word" : "झरना",
-                "Sound" : "09jha",
-                "EnglishLetter" : "JHA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "ञ",
-                "Word" : "",
-                "Sound" : "10nya",
-                "EnglishLetter" : "NYA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "ट",
-                "Word" : "टपरी",
-                "Sound" : "11tta",
-                "EnglishLetter" : "TTA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            {
-                "Letter" : "ठ",
-                "Word" : "ठग",
-                "Sound" : "12thha",
-                "EnglishLetter" : "TTHA",
-                "EnglishWord" : "",
-                "Image" : "",
-                
-            }
-    ]
-}
-                       /*
-            "DDA" : {
+                },
+                {
+                 "Letter" : "ख",
+                 "Word" : "खरायो",
+                 "Sound" : "02kha",
+                 "EnglishLetter" : "KHA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 
+                 },
+                 {
+                 "Letter" : "ग",
+                 "Word" : "गमला",
+                 "Sound" : "03ga",
+                 "EnglishLetter" : "GA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 
+                 },
+                 {
+                 "Letter" : "घ",
+                 "Word" : "घर",
+                 "Sound" : "04gha",
+                 "EnglishLetter" : "GHA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 
+                 },
+                 {
+                 "Letter" : "ङ",
+                 "Word" : "नङ",
+                 "Sound" : "05nga",
+                 "EnglishLetter" : "NGA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 
+                 },
+                 {
+                 "Letter" : "च",
+                 "Word" : "चरा",
+                 "Sound" : "06ca",
+                 "EnglishLetter" : "CA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 
+                 },
+                 {
+                 "Letter" : "छ",
+                 "Word" : "छाता",
+                 "Sound" : "07cha",
+                 "EnglishLetter" : "CHA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 },
+                 {
+                 "Letter" : "ज",
+                 "Word" : "जहाज",
+                 "Sound" : "08ja",
+                 "EnglishLetter" : "JA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 },
+                 {
+                 "Letter" : "झ",
+                 "Word" : "झरना",
+                 "Sound" : "09jha",
+                 "EnglishLetter" : "JHA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 },
+                 {
+                 "Letter" : "ञ",
+                 "Word" : "",
+                 "Sound" : "10nya",
+                 "EnglishLetter" : "NYA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 },
+                 {
+                 "Letter" : "ट",
+                 "Word" : "टपरी",
+                 "Sound" : "11tta",
+                 "EnglishLetter" : "TTA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                 },
+                 {
+                 "Letter" : "ठ",
+                 "Word" : "ठग",
+                 "Sound" : "12thha",
+                 "EnglishLetter" : "TTHA",
+                 "EnglishWord" : "",
+                 "Image" : ""
+                },
+                {
                 "Letter" : "ड",
                 "Word" : "ढकनी",
                 "Sound" : "13dda",
                 "EnglishLetter" : "DDA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "DDHA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "ढ",
                 "Word" : "",
                 "Sound" : "14ddha",
                 "EnglishLetter" : "DDHA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "NNA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "ण",
                 "Word" : "",
                 "Sound" : "15nna",
                 "EnglishLetter" : "NNA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "TA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "त",
                 "Word" : "नंग",
                 "Sound" : "16ta",
                 "EnglishLetter" : "TA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "THA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "थ",
                 "Word" : "परेवा",
                 "Sound" : "17tha",
                 "EnglishLetter" : "THA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "DA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "द",
                 "Word" : "फलफुल",
                 "Sound" : "18da",
                 "EnglishLetter" : "DA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "DHA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "ध",
                 "Word" : "फलफुल",
                 "Sound" : "19dha",
                 "EnglishLetter" : "DHA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "NA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "न",
                 "Word" : "फलफुल",
                 "Sound" : "20na",
                 "EnglishLetter" : "NA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "PA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "प",
                 "Word" : "फलफुल",
                 "Sound" : "21pa",
                 "EnglishLetter" : "PA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "PHA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "फ",
                 "Word" : "फलफुल",
                 "Sound" : "22pha",
                 "EnglishLetter" : "PHA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "BA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "ब",
                 "Word" : "बादर",
                 "Sound" : "23ba",
                 "EnglishLetter" : "BA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "BHA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "भ",
                 "Word" : "भकारी",
                 "Sound" : "24bha",
                 "EnglishLetter" : "BHA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "MA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "म",
                 "Word" : "माकुरा",
                 "Sound" : "25ma",
                 "EnglishLetter" : "MA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "YA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "य",
                 "Word" : "याक",
                 "Sound" : "26ya",
                 "EnglishLetter" : "YA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "RA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "र",
                 "Word" : "रथ",
                 "Sound" : "27ra",
                 "EnglishLetter" : "RA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "LA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "ल",
                 "Word" : "लसुन",
                 "Sound" : "28la",
                 "EnglishLetter" : "LA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "VA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "व",
                 "Word" : "वोकिल",
                 "Sound" : "29va",
                 "EnglishLetter" : "VA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "SHA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "श",
                 "Word" : "",
                 "Sound" : "30sha",
                 "EnglishLetter" : "SHA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "SSA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "ष",
                 "Word" : "",
                 "Sound" : "31ssa",
                 "EnglishLetter" : "SSA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "SA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "स",
                 "Word" : "",
                 "Sound" : "32sa",
                 "EnglishLetter" : "SA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "HA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "ह",
                 "Word" : "हत्केला",
                 "Sound" : "33ha",
                 "EnglishLetter" : "HA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "KSA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "क्ष",
                 "Word" : "",
                 "Sound" : "34ksa",
                 "EnglishLetter" : "KSA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "TRA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "त्र",
                 "Word" : "त्रिसुल",
                 "Sound" : "35tra",
                 "EnglishLetter" : "TRA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            },
-            "GYA" : {
+                "Image" : ""
+                },
+                {
                 "Letter" : "ज्ञ",
                 "Word" : "ज्ञानी",
                 "Sound" : "36gya",
                 "EnglishLetter" : "GYA",
                 "EnglishWord" : "",
-                "Image" : "",
-                
-            }
-        }
-                       ]
+                "Image" : ""
+                }
+            
+                ]
     
-    }*/
-//}
+}
